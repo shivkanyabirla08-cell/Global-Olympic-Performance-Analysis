@@ -1,4 +1,3 @@
-
 from flask import Flask
 
 app = Flask(__name__)
@@ -10,32 +9,38 @@ def home():
     <html>
     <head>
         <title>Global Olympic Sports Performance Analysis</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             body {
                 font-family: Arial, sans-serif;
-                background: #f0f4f8;
                 margin: 0;
+                background: #f0f4f8;
                 color: #243447;
             }
             header {
                 background: #12345a;
                 color: white;
-                padding: 35px 20px;
                 text-align: center;
+                padding: 30px 15px;
             }
             main {
-                max-width: 900px;
-                margin: 30px auto;
-                padding: 25px;
+                max-width: 1100px;
+                margin: auto;
+                padding: 20px;
             }
-            .card {
+            section {
                 background: white;
-                padding: 25px;
-                margin: 18px 0;
+                padding: 22px;
+                margin: 20px 0;
                 border-radius: 12px;
                 box-shadow: 0 2px 8px #ccd3dc;
             }
             h2 { color: #12345a; }
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
         </style>
     </head>
     <body>
@@ -44,12 +49,13 @@ def home():
             <p>Tableau Data Analytics Project</p>
         </header>
         <main>
-            <div class="card">
+            <section>
                 <h2>About the Project</h2>
                 <p>This project analyzes Olympic medals, countries,
                 athletes, sports categories and performance trends.</p>
-            </div>
-            <div class="card">
+            </section>
+
+            <section>
                 <h2>Project Objectives</h2>
                 <ul>
                     <li>Analyze gold, silver and bronze medals.</li>
@@ -57,16 +63,19 @@ def home():
                     <li>Explore Olympic sports and athletes.</li>
                     <li>Present insights using Tableau visualizations.</li>
                 </ul>
-            </div>
-            <div class="card">
-                <h2>Tools Used</h2>
-                <p>Tableau Desktop, Python and Flask.</p>
-            </div>
-            <div class="card">
+            </section>
+
+            <section>
                 <h2>Tableau Dashboard</h2>
-                <p>The Tableau workbook is part of this project.
-                Dashboard publishing is still in progress.</p>
-            </div>
+                <img src="https://raw.githubusercontent.com/shivkanyabirla08-cell/Global-Olympic-Performance-Analysis/main/Dashboard.png"
+                     alt="Olympic Tableau Dashboard">
+            </section>
+
+            <section>
+                <h2>Tableau Story</h2>
+                <img src="https://raw.githubusercontent.com/shivkanyabirla08-cell/Global-Olympic-Performance-Analysis/main/Story.png"
+                     alt="Olympic Tableau Story">
+            </section>
         </main>
     </body>
     </html>
